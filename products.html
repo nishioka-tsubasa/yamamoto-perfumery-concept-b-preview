@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>香料製品一覧｜山本香料 B案</title>
+    <link rel="stylesheet" href="style.css?v=20261106-4" />
+    <script defer src="app.js?v=20261106-4"></script>
+  </head>
+  <body data-page="products">
+    <div class="proposal-chip">CONCEPT B / PRODUCT INDEX</div>
+    <header class="topbar inside">
+      <a
+        class="logo"
+        href="index.html"
+        aria-label="山本香料株式会社 トップへ"
+        ><img
+          class="official-logo"
+          src="assets/official-yamamoto-logo.png"
+          width="286"
+          height="36"
+          alt="山本香料株式会社"
+      /></a>
+      <nav class="nav" id="nav">
+        <a href="index.html#about">私たちについて</a
+        ><a href="products.html">香料製品</a
+        ><a href="index.html#own">自社製品</a
+        ><a href="index.html#tech">研究開発</a>
+      </nav>
+      <a
+        class="header-cta"
+        href="https://www.ypcyy.co.jp/contact/"
+        target="_blank"
+        rel="noopener"
+        >お問い合わせ ↗</a
+      ><button
+        class="menu-button"
+        aria-expanded="false"
+        aria-controls="nav"
+        aria-label="メニューを開く"
+      >
+        <i></i><i></i>
+      </button>
+    </header>
+    <main>
+      <section class="inner-hero">
+        <div>
+          <span class="eyebrow">OUR PRODUCTS / 香料製品</span>
+          <h1>香りを探す。<br /><i>可能性が広がる。</i></h1>
+          <p>
+            素材や用途に合わせた香料製品の入口。<br />まず製品の分野を選んでください。
+          </p>
+        </div>
+        <div class="inner-hero-image">
+          <img src="assets/product-botanical.webp" alt="香料の素材となる植物" />
+        </div>
+      </section>
+      <section class="product-finder section-pad">
+        <div class="finder-head">
+          <div>
+            <span class="eyebrow">FIND YOUR SCENT</span>
+            <h2>香料製品ラインアップ</h2>
+          </div>
+          <p>取扱分野を6つに整理。各分野の説明と詳細への導線を設けました。</p>
+        </div>
+        <div class="finder-controls" role="group" aria-label="製品カテゴリー">
+          <button
+            class="filter-button selected"
+            data-filter="all"
+            aria-pressed="true"
+          >
+            すべて</button
+          ><button
+            class="filter-button"
+            data-filter="natural"
+            aria-pressed="false"
+          >
+            天然精油</button
+          ><button
+            class="filter-button"
+            data-filter="organic"
+            aria-pressed="false"
+          >
+            オーガニック精油</button
+          ><button
+            class="filter-button"
+            data-filter="fragrance"
+            aria-pressed="false"
+          >
+            香粧品香料</button
+          ><button
+            class="filter-button"
+            data-filter="flavor"
+            aria-pressed="false"
+          >
+            食品香料</button
+          ><button
+            class="filter-button"
+            data-filter="ceramide"
+            aria-pressed="false"
+          >
+            セラミド</button
+          ><button
+            class="filter-button"
+            data-filter="other"
+            aria-pressed="false"
+          >
+            その他
+          </button>
+        </div>
+        <p id="results-count" class="result-count" role="status">
+          6カテゴリーを表示しています。
+        </p>
+        <div class="finder-grid">
+          <article class="finder-card reveal" data-category="natural">
+            <img src="assets/product-botanical.webp" alt="ラベンダー" />
+            <div>
+              <span>01 / ESSENTIAL OIL</span>
+              <h3>天然精油</h3>
+              <p>
+                植物から抽出される天然の香料。香りの系統から探しやすい構成を想定しています。
+              </p>
+              <a
+                href="https://www.ypcyy.co.jp/product/"
+                target="_blank"
+                rel="noopener"
+                >現行の商品情報を見る ↗</a
+              >
+            </div>
+          </article>
+          <article class="finder-card reveal" data-category="organic">
+            <img src="assets/hero-flower.webp" alt="花の写真" />
+            <div>
+              <span>02 / ORGANIC OIL</span>
+              <h3>オーガニック精油</h3>
+              <p>
+                有機栽培植物由来の精油。品質や原料へのこだわりを読みやすく整理します。
+              </p>
+              <a
+                href="https://www.ypcyy.co.jp/product/"
+                target="_blank"
+                rel="noopener"
+                >現行の商品情報を見る ↗</a
+              >
+            </div>
+          </article>
+          <article class="finder-card reveal" data-category="fragrance">
+            <img src="assets/product-perfume.webp" alt="香水瓶" />
+            <div>
+              <span>03 / FRAGRANCE</span>
+              <h3>香粧品香料</h3>
+              <p>香水、化粧品、日用品などに用いられる香りを紹介します。</p>
+              <a
+                href="https://www.ypcyy.co.jp/product/"
+                target="_blank"
+                rel="noopener"
+                >現行の商品情報を見る ↗</a
+              >
+            </div>
+          </article>
+          <article class="finder-card reveal" data-category="flavor">
+            <img src="assets/product-citrus.webp" alt="柑橘" />
+            <div>
+              <span>04 / FLAVOR</span>
+              <h3>食品香料</h3>
+              <p>食品・飲料など、おいしさを引き立てる香りの分野です。</p>
+              <a
+                href="https://www.ypcyy.co.jp/product/"
+                target="_blank"
+                rel="noopener"
+                >現行の商品情報を見る ↗</a
+              >
+            </div>
+          </article>
+          <article class="finder-card reveal" data-category="ceramide">
+            <img src="assets/product-diffuser.webp" alt="製品の仮ビジュアル" />
+            <div>
+              <span>05 / CERAMIDE</span>
+              <h3>セラミド</h3>
+              <p>
+                香料以外の原料製品も、用途が伝わるよう独立してご紹介します。
+              </p>
+              <a
+                href="https://www.ypcyy.co.jp/product/"
+                target="_blank"
+                rel="noopener"
+                >現行の商品情報を見る ↗</a
+              >
+            </div>
+          </article>
+          <article class="finder-card reveal" data-category="other">
+            <img src="assets/tech-lab.webp" alt="製造設備の仮イメージ" />
+            <div>
+              <span>06 / OTHER MATERIALS</span>
+              <h3>その他</h3>
+              <p>食品素材や製造工程に関連する取扱品を紹介します。</p>
+              <a
+                href="https://www.ypcyy.co.jp/product/"
+                target="_blank"
+                rel="noopener"
+                >現行の商品情報を見る ↗</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+      <aside class="separate-products">
+        <span class="eyebrow">LOOKING FOR OUR ORIGINAL PRODUCTS?</span>
+        <h2>山本香料の自社製品はこちら</h2>
+        <p>
+          「マスクに貼るアロマ」「マスクに吹くアロマ」は香料製品とは分けてご案内しています。
+        </p>
+        <div class="separate-links">
+          <a href="self-product.html?type=sticker">マスクに貼るアロマ ↗</a
+          ><a href="self-product.html?type=spray">マスクに吹くアロマ ↗</a>
+        </div>
+      </aside>
+    </main>
+    <footer class="footer">
+      <a
+        class="footer-official-logo"
+        href="index.html"
+        aria-label="山本香料株式会社 トップへ"
+        ><img
+          src="assets/official-yamamoto-logo.png"
+          width="286"
+          height="36"
+          alt="山本香料株式会社"
+      /></a>
+      <span>掲載写真は提案用仮素材です</span
+      ><a href="index.html">トップに戻る ↗</a>
+    </footer>
+  </body>
+</html>
